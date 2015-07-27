@@ -1,0 +1,137 @@
+BODY {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.wrapper {
+  padding: 10px 0;
+  width: 424px;
+  margin: auto;
+  position: relative;
+}
+FORM {
+  background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.15);
+  padding: 10px 20px;
+}
+INPUT,
+SELECT {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  border-radius: 4px 4px 4px 4px;
+  color: #555;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+INPUT[type="text"],
+INPUT[type="password"],
+INPUT[type="url"],
+INPUT[type="submit"] {
+  width: 370px;
+}
+SELECT {
+  padding: 0;
+}
+.input-wrapper {
+  margin: 10px 0;
+}
+INPUT:-moz-placeholder {
+  color: #999;
+}
+LABEL {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-left: 0;
+  vertical-align: middle;
+}
+.output {
+  font-size: 3em;
+  color: #efefef;
+  border: 0;
+  text-align: center;
+}
+.output {
+  padding: 10px 0 20px;
+}
+.output:empty {
+  padding: 0;
+}
+::-moz-selection {
+  background: #efefef;
+  color: #fff;
+}
+::selection {
+  background: #efefef;
+  color: #fff;
+}
+input[type="submit"] {
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) #a2a2a2;
+  border-image: none;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 1px 2px rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.3);
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 4px 12px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+  vertical-align: middle;
+}
+input[type="submit"]:hover {
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-position 0.1s linear 0s;
+}
+input[type="submit"]:active {
+  background-color: #e6e6e6;
+  background-image: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15) inset, 0 1px 2px rgba(0,0,0,0.05);
+  outline: 0 none;
+}
+.password-reset {
+  color: #999;
+  border-bottom: 1px dotted #999;
+  cursor: pointer;
+  display: none;
+  margin: 18px 0 20px;
+}
+.password-reset.active {
+  display: inline-block;
+}
+.password-reset:hover {
+  border-bottom: none;
+  padding: 0 0 1px;
+}
+FIELDSET {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.checkboxes {
+  overflow: hidden;
+}
+.count-wrapper {
+  margin: 0;
+}
