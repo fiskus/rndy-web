@@ -2,6 +2,7 @@ var browserify = require('browserify');
 var gulp = require('gulp');
 var jade = require('gulp-jade');
 var source = require('vinyl-source-stream');
+var stylus = require('gulp-stylus');
 var watchify = require('watchify');
 
 var bundler = watchify(browserify('./src/js/index.js', watchify.args))
@@ -26,5 +27,11 @@ gulp.task('js', bundle);
 gulp.task('jade', function () {
     gulp.src(['./src/index.jade'])
         .pipe(jade())
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('stylus', function () {
+    gulp.src(['./src/styl/style.styl'])
+        .pipe(stylus())
         .pipe(gulp.dest('./dist/'));
 });

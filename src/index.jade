@@ -2,33 +2,35 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Rndy
     script(src='bundle.js', async='true')
-    link(rel='stylesheet', href='bundle.css', media='all')
+    link(rel='stylesheet', href='style.css', media='all')
   body
     .output
-    form.form(action='', method='post', enctype='multipart/form-data')
-      fieldset.inputs
-        p.input-wrapper.username-wrapper
-          input#username(name='username', placeholder='Username', required='required', type='text')
-        p.input-wrapper.domain-wrapper
-          input#domain(name='domain', placeholder='Domain', list='domain-list', required='required', type='text')
-          datalist#domain-list
-        p.input-wrapper.password-wrapper
-          input#password(name='password', placeholder='Master-password', required='required', type='password')
-          span.password-reset Re-enter password
-      fieldset.checkboxes
-        p.count-wrapper
-          label(for='count')
-            | length
-            select#count(name='count')
-              - var n = 0
-              while n < 20
-                - n++
-                case n
-                  when 8
-                    option(value=n, selected='selected')= n
-                  default
-                    option(value=n)= n
-      p
-        input(value='Get password!', type='submit')
+    .wrapper
+      form.form(action='', method='post', enctype='multipart/form-data')
+        fieldset.inputs
+          p.input-wrapper.username-wrapper
+            input#username(name='username', placeholder='Username', required='required', type='text')
+          p.input-wrapper.domain-wrapper
+            input#domain(name='domain', placeholder='Domain', list='domain-list', required='required', type='text')
+            datalist#domain-list
+          p.input-wrapper.password-wrapper
+            input#password(name='password', placeholder='Master-password', required='required', type='password')
+            span.password-reset Re-enter password
+        fieldset.checkboxes
+          p.count-wrapper
+            label(for='count')
+              | length
+              select#count(name='count')
+                - var n = 0
+                while n < 20
+                  - n++
+                  case n
+                    when 8
+                      option(value=n, selected='selected')= n
+                    default
+                      option(value=n)= n
+        p
+          input(value='Get password!', type='submit')

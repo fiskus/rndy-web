@@ -18084,10 +18084,10 @@ function renderPassword (username, domain, password, limit) {
     }
 
     var outputEl = doc.querySelector('.output');
-    outputEl.textContent = passwd;
+    outputEl.innerHTML = '<input type="text" value="' + passwd + '">';
 
     setTimeout(function () {
-        outputEl.textContent = '';
+        outputEl.innerHTML = '';
     }, 10000);
 }
 
