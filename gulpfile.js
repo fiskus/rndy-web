@@ -27,7 +27,7 @@ gulp.task('js', bundle);
 gulp.task('jade', function () {
     gulp.src(['./src/index.jade'])
         .pipe(jade())
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('stylus', function () {
